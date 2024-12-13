@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W&N</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <section>
+    <h2>Filtrar por:</h2>
+    <nav class="year-menu">
+      <button onclick="filterByYear(2021)">2021</button>
+      <button onclick="filterByYear(2022)">2022</button>
+      <button onclick="filterByYear(2023)">2023</button>
+      <button onclick="filterByYear(2024)">2024</button>
+      <button onclick="filterByYear(null)">Todos</button>
+    </nav>
+  </section>
+
+  <div class="container">
+    <header id="fixed-header">
+      <h1>Nosso bauzinho de recordações</h1>
+      <p>Tu é o meu amor há exatos:</p>
+      <div id="time-display">
+        <span id="days">0</span> dias,
+        <span id="hours">0</span> horas,
+        <span id="minutes">0</span> minutos,
+        <span id="seconds">0</span> segundos e contando...
+
+      </div>
+    </header>
+    <section>
+      <h2>Nossos momentos</h2>
+    </section>
+    <main class="gallery">
+      <div class="photo-block" data-year="2021">
+        <img src="primeiro-beijo.jpg" alt="Primeiro Beijo">
+        <div class="description">
+          <p><strong>Data:</strong> 06 de Novembro de 2021</p>
+          <br>
+          <p>Começo de tudo haha nesse dia que a gente fechou o bar e tu ficou zonza na primeira caipirinha, só a pinga
+            kkkk Ficamos sufocados
+            dentro do carro de tanto se beijar 🙊</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2021">
+        <img src="safado.png" alt="Alergia">
+        <div class="description">
+          <p><strong>Data:</strong> 12 de Novembro de 2021</p>
+          <br>
+          <p>Esse dia aqui não tem foto, mas foi muito bom, e como foi, inclusive, saudades das pernas tremendo 🙃 de
+            ficar acordado até 4h da manhã perdendo as forças haha a parte ruim foi que tu teve crise alérgica 🥲 </p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2021">
+        <img src="paparazi.jpg" alt="Alergia">
+        <div class="description">
+          <p><strong>Data:</strong> 27 de Novembro de 2021</p>
+          <br>
+          <p>Bom era os paparazzi "flagrando" a gente, esse aqui foi o Guilherme kkk lembro que quando fui te deixar em
+            casa ainda quase fomos assaltados, que aventura</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2021">
+        <img src="dell.jpg" alt="Dell">
+        <div class="description">
+          <p><strong>Data:</strong> 04 de Dezembro de 2021</p>
+          <br>
+          <p>Depois que a gente saiu do Marujo fomos ao Maverick que tinha show do Dell, depois de mais umas duas
+            caipirinhas a gente desviou o caminho de casa e pernoitou em outro canto,
+            inclusive muitas saudades de fazer isso haha</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2021">
+        <img src="chuva.jpeg" alt="Chuva">
+        <div class="description">
+          <p><strong>Data:</strong> 17 de Dezembro de 2021</p>
+          <br>
+          <p>Esse dia tinha caído uma chuva e tu com preguiça de sair no frio, mas aceitou sair mesmo assim kkkkk mas
+            depois foi ótimo, ficou suada e bem quetinha 🙃
+          </p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2021">
+        <img src="aniversario-neis.jpg" alt="Teu aniversário">
+        <div class="description">
+          <p><strong>Data:</strong> 22 de Dezembro de 2021</p>
+          <br>
+          <p>No teu aniversário tu não queria sair de casa e eu te obriguei kkkk</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="reveillon.png" alt="reveillon">
+        <div class="description">
+          <p><strong>Data:</strong> 01 de Janeiro de 2022</p>
+          <br>
+          <p>Menos de dois meses que a gente ficava, tu passou a virada comigo, dormimos juntos e ainda ganhei 60 conto
+            no bingo na tua casa kkk viva os intensos. O ruim é que depois tu pegou
+            covid e eu tive q passar uns 10 dias sem te ver e te dar uns cheiros.</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="neis.jpg" alt="neis">
+        <div class="description">
+          <p><strong>Data:</strong> 04 de Janeiro de 2022</p>
+          <br>
+          <p>Segundo dia de quarentena kkk</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="chuva2.jpeg" alt="neis">
+        <div class="description">
+          <p><strong>Data:</strong> 14 de Janeiro de 2022</p>
+          <br>
+          <p>Esse dia caiu uma chuva que eu tive que parar o carro por que eu não tava vendo nada kkk porém, tava
+            morrendo de saudades de tu, e não tinha chuva que atrapalharia
+            eu ir te dar um cheiro, tinha uns dois dias q tu tinha saído da quarentena.</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="churras.jpg" alt="neis">
+        <div class="description">
+          <p><strong>Data:</strong> 21 de Janeiro de 2022</p>
+          <br>
+          <p>Dia do primeiro churras em família que enganaram a gente com alcatra e disseram que era picanha kkk</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="retardados.jpg" alt="neis">
+        <div class="description">
+          <p><strong>Data:</strong> 22 de Janeiro de 2022</p>
+          <br>
+          <p>E como esquecer o dia que eu voltei pra casa com fome por que fiquei com vergonha de fazer uma pratada de
+            respeito kkkk</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="fev.jpg" alt="neis">
+        <div class="description">
+          <p><strong>Data:</strong> 05 de Fevereiro de 2022</p>
+          <br>
+          <p>Nesse dias a gente tinha saído com a Ray e o Rudim kkk ficamos no bar até de madrugada, depois fomos ver o
+            dia amanhecer kkk tu ainda dormiu uma vez, pq cansou um
+            pouquinho kkk mas foi nesse dia que quando te deixei em casa tu falou que nunca tinha gostado de ninguém, e
+            que pra tu era meio novo, acho que tu não tava sabendo lidar bem
+            com oq tu tava sentido pq tu abriu a porta do carro e saiu correndo, fiquei preocupado kkk mas depois ficou
+            tudo certo e estamo aqui até hoje e estaremos juntos pra toda vida.
+          </p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="mei.jpg" alt="neis">
+        <div class="description">
+          <p><strong>Data:</strong> 26 de Fevereiro de 2022</p>
+          <br>
+          <p>Dia que virei o cunhado preferido da Meillany por um final de semana pq enchi ela de cerveja kkkk só lembro
+            dela perguntando pra tu: "tá apaixonada né?!" haha</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="abril.jpg" alt="neis">
+        <div class="description">
+          <p><strong>Data:</strong> 01 de Abril de 2022</p>
+          <br>
+          <p>Eu sei, teve um hiato de fevereiro até aqui kkk mas em março eu tava indo pra faculdade todos os dias e
+            acho que os fins de semana não saímos muito, mas esse dia aqui
+            que tu foi comigo no meu boteco preferido kkk
+          </p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="deto.jpg" alt="neis">
+        <div class="description">
+          <p><strong>Data:</strong> 06 de Abril de 2022</p>
+          <br>
+          <p>Não precisa de legenda, mas só afim de informar, esse foi o meu primeiro papel de parede que tinha nós dois
+            juntos </p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="caipirinhas.jpg" alt="neis">
+        <div class="description">
+          <p><strong>Data:</strong> 08 de Abril de 2022</p>
+          <br>
+          <p>Agora esse dia aqui foi pra ficar na memória kkkkk acho que tomei 12 caipirinhas e mais um outro drink, fui
+            embora bonzinho o alcool bateu foi de manhã, chega
+            fui trabalhar ruim e ainda tinha que ir tirar o raio-x para o aparelho e eu só a pinga kkkk mas um detalhe
+            que eu gosto desse dia foi a primeira vez que eu falei que
+            te amava e tu ficou toda sem jeito kkkk TE AMO, MEU AMOR
+          </p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="barra.jpg" alt="neis">
+        <div class="description">
+          <p><strong>Data:</strong> 22 de Abril de 2022</p>
+          <br>
+          <p>Quando a gente foi lá pra Barra do Ouro na tua motoca kkk viagem demoradaa, mas era muito bom kkk nesse dia
+            a gente passou no meio de um enxame de abelhas q entraram na minha jaqueta</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="neis-pesca.jpg" alt="neis">
+        <div class="description">
+          <p><strong>Data:</strong> 23 de Abril de 2022</p>
+          <br>
+          <p>Minha pescadora, nesse dia tu pegou os maiores peixes deixando eu e o pai no chinelo kkk</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="bolsa.jpg" alt="neis">
+        <div class="description">
+          <p><strong>Data:</strong> 24 de Abril de 2022</p>
+          <br>
+          <p>Hora de voltar pra casa, tu e tua bolsa gigante kkkkk</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="dormiu.jpg" alt="neis">
+        <div class="description">
+          <p><strong>Data:</strong> 28 de Abril de 2022</p>
+          <br>
+          <p>Comeu tanta coxinha que dormiu</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="neis2.jpg" alt="neis">
+        <div class="description">
+          <p><strong>Data:</strong> 09 de Maio de 2022</p>
+          <br>
+          <p>Das fotos aleatórias que tu mandava só pra eu ver o tanto que tu é linda</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="neis3.jpg" alt="neis">
+        <div class="description">
+          <p><strong>Data:</strong> 19 de Maio de 2022</p>
+          <br>
+          <p>Das fotos aleatórias que eu amo haha</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="teatro.jpg" alt="neis">
+        <div class="description">
+          <p><strong>Data:</strong> 22 de Maio de 2022</p>
+          <br>
+          <p>Dia de teatro, depois daqui a gente só pra casa dormir kkkkk</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="pereba.jpg" alt="neis">
+        <div class="description">
+          <p><strong>Data:</strong> 28 de Maio de 2022</p>
+          <br>
+          <p>O Pereba era teu segundo maior fã, pq o primeiro é eu kkk bichim amava mastigar teu cabelo, sem falar que
+            ele sumia o dia todo, quando tu chegava ele corria pra te ver</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="neis4.jpg" alt="neis">
+        <div class="description">
+          <p><strong>Data:</strong> 03 de Junho de 2022</p>
+          <br>
+          <p>Mais um aleatória kkk eu amo essas </p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="meme.jpg" alt="neis">
+        <div class="description">
+          <p><strong>Data:</strong> 03 de Junho de 2022</p>
+          <br>
+          <p>Dia que eu queria te ver mas tu não, pq tu não queria tomar banho kkkkk (meme)</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="TCC.jpg" alt="neis">
+        <div class="description">
+          <p><strong>Data:</strong> 10 de Junho de 2022</p>
+          <br>
+          <p>Dia da defesa do meu TCC que foi um desastre, mas tinha vcs me apoiando lá na frente kkkkk até hoje sinto
+            vergonha, mas pelo menos fui aprovado</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="1namo.jpg" alt="neis">
+        <div class="description">
+          <p><strong>Data:</strong> 12 de Junho de 2022</p>
+          <br>
+          <p>Nosso primeiro dia dos namorados, a gente comemorou comendo panceta a pururuca e a tarde fomos ao milkshake
+            kkk tu tomou uns 2, não sei onde tu colocou tanto milkshake</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="gyn.jpg" alt="neis">
+        <div class="description">
+          <p><strong>Data:</strong> 15 de Junho de 2022</p>
+          <br>
+          <p>A gente tomando um capuccino no Mega Moda depois de ter batido o carro do Diego num Monza kkkkk</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="primeira-viagem.jpg" alt="Primeira Viagem Juntos">
+        <div class="description">
+          <p><strong>Data:</strong> 16 de Junho de 2022</p>
+          <br>
+          <p>Nossa primeira viagem juntos, e minha primeira viagem de verdade foi contigo. Ainda lembro da volta da
+            viagem, tu tava estressada e eu consegui tirar teu estresse rapidinho 🙃</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="trindade.jpg" alt="Primeira Viagem Juntos">
+        <div class="description">
+          <p><strong>Data:</strong> 18 de Junho de 2022</p>
+          <br>
+          <p>Esse dia aqui eu aprendi que nem todo lugar se dever ir de short e chinela, frio da peste que eu passei, e
+            a gente ainda tomou caipirinha pra melhorar kkkk</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="neis5.jpg" alt="Primeira Viagem Juntos">
+        <div class="description">
+          <p><strong>Data:</strong> 16 de Junho de 2022</p>
+          <br>
+          <p>Eu amo essas fotos aleatórias kkk</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="formatura.jpg" alt="formatura">
+        <div class="description">
+          <p><strong>Data:</strong> 19 de Julho de 2022</p>
+          <br>
+          <p>Dia da minha colação de grau que tu tanto me apoiou, sem você não teria sido tão leve superar as
+            dificuldades e as madrugadas em claro. Obrigado por tudo, meu amor. </p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="praia.jpg" alt="formatura">
+        <div class="description">
+          <p><strong>Data:</strong> 23 de Julho de 2022</p>
+          <br>
+          <p>Dia de praia kkk lembro q tu quase arrancou minha mão quando a balsa começou a andar</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="barra2.jpg" alt="formatura">
+        <div class="description">
+          <p><strong>Data:</strong> 14 de Agosto de 2022</p>
+          <br>
+          <p>Toda oportunidade de ir pra barra do ouro a gente ia kkk lá era quente mas era até bom, eu gostava quando a
+            gente ia tomar banho 🫣😏</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="em-casa2.jpeg" alt="formatura">
+        <div class="description">
+          <p><strong>Data:</strong> 20 de Agosto de 2022</p>
+          <br>
+          <p>Dos nossos rolezinhos em casa</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="casca.jpeg" alt="formatura">
+        <div class="description">
+          <p><strong>Data:</strong> 21 de Agosto de 2022</p>
+          <br>
+          <p>Aquela casquinha que era de lei todo domingo lá na praça</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="role.jpeg" alt="formatura">
+        <div class="description">
+          <p><strong>Data:</strong> 03 de Setembro de 2022</p>
+          <br>
+          <p>E os rolê aleatório na casa dos outros kkk</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="em-casa.jpg" alt="formatura">
+        <div class="description">
+          <p><strong>Data:</strong> 06 de Setembro de 2022</p>
+          <br>
+          <p>Quando precisamos enconomizar sempre faziamos as nossas caipirinhas na área de casa kkk na época não tinha
+            ar-condicionado e lá era o lugar mais fresquinho kkk inclusive, saudades,
+            mais saudades mesmo era do que tinha além do drink 🫣😏
+          </p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="barra3.jpg" alt="formatura">
+        <div class="description">
+          <p><strong>Data:</strong> 10 de Setembro de 2022</p>
+          <br>
+          <p>Dia que quase morri de dor de estômago por comer castanha queimada kkk sendo q tu tinha avisado e ficou
+            brigando comigo</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="21.jpg" alt="formatura">
+        <div class="description">
+          <p><strong>Data:</strong> 23 de Setembro de 2022</p>
+          <br>
+          <p>Tu experimentando meu drink azedo no nosso point de sempre</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="acai.jpeg" alt="formatura">
+        <div class="description">
+          <p><strong>Data:</strong> 05 de Outubro de 2022</p>
+          <br>
+          <p>Outubro parece que foi meio parado ou a gente tirou pouca foto kkkk mas sempre tem o açaí</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="1ano.jpg" alt="formatura">
+        <div class="description">
+          <p><strong>Data:</strong> 06 de Outubro de 2022</p>
+          <br>
+          <p>Nosso primeiro ano de namoro, a gente só ficou em casa e eu fiz uma panceta "cocrante" e caipirinha pra
+            gente haha</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="feria.jpg" alt="formatura">
+        <div class="description">
+          <p><strong>Data:</strong> 13 de Novembro de 2022</p>
+          <br>
+          <p>Feriadinho que passamos pescando no meio do mato</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="15-11-22.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 15 de Novembro de 2022</p>
+          <br>
+          <p>Os prêmios que ganhei nesse bingo só tu gostou kkkk principalmente esse gloss, na verdade, eu gostei
+            também, gostinho de morando quando te beijava haha</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="casamento.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 10 de Dezembro de 2022</p>
+          <br>
+          <p>A gente indo no casório do povo e eu só me pergunto uma coisa: e quando a gente vai pro nosso casório?</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="11-12-22.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 11 de Dezembro de 2022</p>
+          <br>
+          <p>Sou um ótimo trancista u_u</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="busca.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 19 de Dezembro de 2022</p>
+          <br>
+          <p>Em busca da fantasia perfeita</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="niverNeis.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 22 de Dezembro de 2022</p>
+          <br>
+          <p>Minha bichinha nesse dia morrendo de dor e febre, mas tava lá, tentando ser plena, no outro dia tive que te
+            obrigar a ir na UPA kkk</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2022">
+        <img src="2revei.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 31 de Dezembro de 2022</p>
+          <br>
+          <p>Nosso segundo revéillon, esse dia foi muito bom, lembrando que o problema foi a gente que estourou o
+            orçamento da festa com a decoração kkkk</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2023">
+        <img src="1-1-23.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 01 de Janeiro de 2023</p>
+          <br>
+          <p>Primeiro de Janeiro de 2023 nesse dia a gente só pensava em uma coisa: CHEGANDO O DIA DA 1ª VIAGEM PARA
+            GRAMADO</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2023">
+        <img src="CHOC.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 06 de Janeiro de 2023</p>
+          <br>
+          <p>Dia de chuva sempre pedia um chocolatinho quente, ai ficava quente por dentro e depois eu de esquentava por
+            fora 😏 </p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2023">
+        <img src="atelie.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 14 de Janeiro de 2023</p>
+          <br>
+          <p>Dia de cafézinho no Ateliê, e eu nunca me esqueço do dia que o portão te deixou trancada na primeira vez
+            que a gente iria lá kkkk e eu fiquei sozinho e o Lucas dizendo q eu tinha levado um "bolo"</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2023">
+        <img src="vestido.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 27 de Janeiro de 2023</p>
+          <br>
+          <p>Mulher linda da minha vida</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2023">
+        <img src="confra.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 28 de Janeiro de 2023</p>
+          <br>
+          <p>Confra da firma, dia que o churrasco caríssimo não deu pra quem quis kkkk pq não tinha quase nada pra comer
+          </p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2023">
+        <img src="fazenda.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 29 de Janeiro de 2023</p>
+          <br>
+          <p>Tu cilhuda pra viajar haha</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2023">
+        <img src="diadaviagem.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 01 de Fevereiro de 2023</p>
+          <br>
+          <p>Dia de pegar o buzão pra tão esperada viagem</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2023">
+        <img src="espera.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 02 de Fevereiro de 2023</p>
+          <br>
+          <p>A gente indo ao Atacadão pra tomar café e lá tava fechado kkk ficamos esperando um tempão o povo se arrumar
+            lá no banheiro, pra no final a gente voltar e comer na rodoviária kkkkkkk</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2023">
+        <img src="fome.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 02 de Fevereiro de 2023</p>
+          <br>
+          <p>E tu comeu bem kkkk só lembrei do meme: "oh vontade de comer um pacote de bolacha com saco e tudo, um café
+            e uma banda de cuscuz"</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2023">
+        <img src="aviao.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 02 de Fevereiro de 2023</p>
+          <br>
+          <p>A nossa primeira viagem (traumatizante) de avião, banco de trás sem espaço, não viamos nada e só sentia o
+            avião subindo e descendo kkk</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2023">
+        <img src="conexao.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 02 de Fevereiro de 2023</p>
+          <br>
+          <p>Conexão no GRU e a gente acabado depois de 4h esperando (eu acho que foram 4h kkk) e ainda tivemos nosso
+            rim extraído lá no subway</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2023">
+        <img src="fondue.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 02 de Fevereiro de 2023</p>
+          <br>
+          <p>Hora do fondue kkk foi a primeira vez que eu comi isso e adorei</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2023">
+        <img src="vinho.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 02 de Fevereiro de 2023</p>
+          <br>
+          <p>A cara de felicidade de quem ganhou um vinho na faixa kkk</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2023">
+        <img src="aurora.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 03 de Fevereiro de 2023</p>
+          <br>
+          <p>Nesse dia tu saiu altinha da degustação de vinho na Aurora</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2023">
+        <img src="mariaf.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 03 de Fevereiro de 2023</p>
+          <br>
+          <p>Rolê na maria fumaça</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2023">
+        <img src="hector.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 03 de Fevereiro de 2023</p>
+          <br>
+          <p>E a noite fomos ao Hector, queria esse hambúrgue de novo kkk e foi nesse dia que eu peguei uma gripe
+            miseravi kkkk</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2023">
+        <img src="02.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 04 de Fevereiro de 2023</p>
+          <br>
+          <p>Meu par desde a época das pirâmides ♥</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2023">
+        <img src="vapor.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 04 de Fevereiro de 2023</p>
+          <br>
+          <p>Saindo do museu a gente foi pro outro museu kkk eu amo essa foto</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2023">
+        <img src="fofoca.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 04 de Fevereiro de 2023</p>
+          <br>
+          <p>Nessa hora a gente tava falando do preço do café que tava caro </p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2023">
+        <img src="antiga.JPG" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 04 de Fevereiro de 2023</p>
+          <br>
+          <p>Queria dizer muitas coisas aqui, mas não consigo colocá-las em palavras. Só que tu é o meu amor e eu te amo
+            muito.
+          </p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2023">
+        <img src="noitgaucha.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 04 de Fevereiro de 2023</p>
+          <br>
+          <p>Na noite gaúcha a gente quase se acabou de tanto comer, comida boa da pesteee</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <video width="100%" controls>
+          <source src="garfoebom.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeos.
+        </video>
+        <div class="description" data-year="2023">
+          <p><strong>Data:</strong> 04 de Fevereiro de 2023</p>
+          <br>
+          <p>Minha dançarina mais linda do mundo </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="oitavo.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 05 de Fevereiro de 2023</p>
+          <br>
+          <p>Dia que tu foi a 8ª anã dos 7 Anões kkkk</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2023">
+        <img src="chima.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 05 de Fevereiro de 2023</p>
+          <br>
+          <p>Queimou a língua com chimarrão, tadinha kkkk mas eu ri</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2023">
+        <img src="vinho2.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 05 de Fevereiro de 2023</p>
+          <br>
+          <p>Aquele vinhozinho pra aliviar a língua kkk vinho bom esse aí</p>
+        </div>
+      </div>
+      <div class="photo-block" data-year="2023">
+        <img src="lhamas.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 05 de Fevereiro de 2023</p>
+          <br>
+          <p>As Lhamas fofinhas, queria carregar pra casa</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="jolimont.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 05 de Fevereiro de 2023</p>
+          <br>
+          <p>Momento exato em que tu se apaixonou pela jolimont </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="mundogelado.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 06 de Fevereiro de 2023</p>
+          <br>
+          <p>Último dia de viagem e tu zero empolgação pra voltar, se animou mais depois de um chocolate quente haha
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="Dobby.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 06 de Fevereiro de 2023</p>
+          <br>
+          <p>Mas foi ficar de boa mesmo depois da magia de libertar o Dobby te pegar kkk</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="cheiro.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 06 de Fevereiro de 2023</p>
+          <br>
+          <p>Melhor cheiro do mundo, ainda fica melhor pq foi no lago negro</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="bonde.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 06 de Fevereiro de 2023</p>
+          <br>
+          <p>Já ia me esquecendo do bondinho kk tava morrendo de medo desse trem despencar</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="pulguento.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 06 de Fevereiro de 2023</p>
+          <br>
+          <p>Além de pagar caro a gente ainda é humilhado kkkk</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="carademau.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 06 de Fevereiro de 2023</p>
+          <br>
+          <p>Dia que até os garçons agradeceram quando a gente parou de pegar pizza kkk</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="volta.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 07 de Fevereiro de 2023</p>
+          <br>
+          <p>A volta pra casa de umas das melhores viagens, obrigado por todos esses momentos incríveis, a gente
+            aproveitou bem esses dias, eu adorava os passeios com vinho
+            quando a gente chega no quarto o efeito ainda não tinha passado haha e a gente aproveitava o fogo do vinho
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <video width="100%" controls>
+          <source src="10marco.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeos.
+        </video>
+        <div class="description">
+          <p><strong>Data:</strong> 10 de Março de 2023</p>
+          <br>
+          <p>Março a gente pode resumir em uma frase: Esquina21 kkkk todo final de semana a gente esteve lá, bora lá que
+            dia?</p>
+        </div>
+      </div>
+
+
+      <div class="photo-block" data-year="2023">
+        <img src="abril1.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 2 de Abril de 2023</p>
+          <br>
+          <p>Caipirinha pra iniciar o mês kkk rapaz, a gente era viciado </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="abril2.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 2 de Abril de 2023</p>
+          <br>
+          <p>Saudades de um pastelzinho de vento na Pé de Cana </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="abril3.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 30 de Abril de 2023</p>
+          <br>
+          <p>Esse dia a gente pegou uma chuva de lascar na estrada pra Barra do Ouro, tu chegou com as mãos vermelhas de
+            tando que os pingos eram fortes kkkk</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <video width="100%" controls>
+          <source src="video.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeos.
+        </video>
+        <div class="description">
+          <p><strong>Data:</strong> 13 de Maio de 2023</p>
+          <br>
+          <p>Aproveitando o espumante que demorou quase 30 dias pra chegar na nossa primeira compra na Jolimont</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="teatro1.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 02 de Junho de 2023</p>
+          <br>
+          <p>Indo pro melhor show do ano, até a gente ver os que viriam depois kkkk</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <video width="100%" controls>
+          <source src="teatro2.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeos.
+        </video>
+        <div class="description">
+          <p><strong>Data:</strong> 03 de Junho de 2023</p>
+          <br>
+          <p>A gente chegou cedinho e pegou o melhor lugar, bem na frente.</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <video width="100%" controls>
+          <source src="jenga.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeos.
+        </video>
+        <div class="description">
+          <p><strong>Data:</strong> 10 de Junho de 2023</p>
+          <br>
+          <p>A gente tendo a certeza que tu ia derrubar a torre kkk tu vai lá e consegue tirar o negócio, maior
+            "ladrona" no jenga</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="dia12.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 12 de Junho de 2023</p>
+          <br>
+          <p>Eu amo essa escultura de nós dois e o Sir Pereba 😍🐈‍⬛ </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="azul.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 18 de Junho de 2023</p>
+          <br>
+          <p>Acordamos 4h da matina pra pegar a estrada, bora que dia de novo? </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="junina.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 24 de Junho de 2023</p>
+          <br>
+          <p>Procurando os enfeites pra festa junina haha</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="junina2.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 24 de Junho de 2023</p>
+          <br>
+          <p>Nem parece que a gente tava enchendo o bucho de caldo no calor kkkk</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="birosca.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 01 de Julho de 2023</p>
+          <br>
+          <p>A segunda chance que a biscora ganhou da gente, mas só pq o Dell iria cantar kkk</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <video width="100%" controls>
+          <source src="16-7.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeos.
+        </video>
+        <div class="description" data-year="2023">
+          <p><strong>Data:</strong> 16 de Julho de 2023</p>
+          <br>
+          <p>A gente fazendo as compras pra ir para a casa de veraneio, a temporada de 2023 foi ótima, durante o dia a
+            gente fica só pra aproveitar bem haha</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <video width="100%" controls>
+          <source src="4-8.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeos.
+        </video>
+        <div class="description">
+          <p><strong>Data:</strong> 4 de Agosto de 2023</p>
+          <br>
+          <p>Dia que o povo esqueceu de preparar nosso lanche kkk e depois da gente ir barracar fizeram em 10min e
+            levamos de graça</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <video width="100%" controls>
+          <source src="19-8.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeos.
+        </video>
+        <div class="description">
+          <p><strong>Data:</strong> 19 de Agosto de 2023</p>
+          <br>
+          <p>Inauguração do barzinho de minas, que assim como a geek paradise, prometeu tudo e não entregou nada kkk mas
+            o vinho tava bom</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="1-9.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 01 de Setembro de 2023</p>
+          <br>
+          <p>Depois da sessão de fotos da Reluz, cheirosinha com a sua taça de vinho = feliz</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="1-10.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 01 de Outubro de 2023</p>
+          <br>
+          <p>Meus melhores momentos são sempre contigo, nesse dia a única coisa q não foi boa, foi pagar 70 conto num
+            pégola seco kkkF</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <video width="100%" controls>
+          <source src="11-10.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeos.
+        </video>
+        <div class="description">
+          <p><strong>Data:</strong> 11 de Outubro de 2023</p>
+          <br>
+          <p>Dos nossos brindes que os motivos eram "apenas" brindar nossa conexão</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="zeramalho.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 12 de Outubro de 2023</p>
+          <br>
+          <p>Como eu disse, o show do Teatro Mágico era o melhor do ano, até a gente saber qual era o próximo, esse aqui
+            estava com o título, até novembro haha a gente levou uma facada na bebida e na comida, mas valeu a pena
+            ainda levei o balde embora kkkk</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="casamentosite.png" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 16 de Outubro de 2023</p>
+          <br>
+          <p>Nesse dia, comecei a planejar o pedido de casamento, aquele que você não teria como recusar, mesmo que
+            quisesse. 😂 O mais difícil foi segurar a ansiedade até o dia 1º de janeiro de 2024.</p>
+        </div>
+      </div>
+
+
+      <div class="photo-block" data-year="2023">
+        <img src="4-11.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 4 de Novembro de 2023</p>
+          <br>
+          <p>Minha bichinha saindo sempre tarde do trabalho e sem comer, e eu como um bom namorado te leva pra comer um
+            lanche bem saudável kkkk inclusive, bora lá?</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="detonautas.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 11 de Novembro de 2023</p>
+          <br>
+          <p>Tu toda borocochô nesse dia, e eu querendo te animar, e foi só o Tico cantar a primeira que teu olho chega
+            brilhava, pulou que só, e tava com um sorriso que dava pra ver até de costas haha.</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <video width="100%" controls>
+          <source src="detonautas.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeos.
+        </video>
+        <div class="description">
+          <p><strong>Data:</strong> 11 de Novembro de 2023</p>
+          <br>
+          <p>Nossa música</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="detonautas2.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 11 de Novembro de 2023</p>
+          <br>
+          <p>E eu saí correndo pra pegar a frente lá pr tirar foto, teve barraco na fila, muita espera, gente querendo
+            furar a fila tbm kkk mas conseguimos a foto, tu tava
+            muito feliz aí, nem parece a mesma pessoa que chegou no show rs o bom foi a gente voltando pra tirar outra
+            foto e o Tico olhando pra gente: "vcs de novo?"</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <video width="100%" controls>
+          <source src="25-11-2023.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeos.
+        </video>
+        <div class="description">
+          <p><strong>Data:</strong> 25 de Novembro de 2023</p>
+          <br>
+          <p>Depois de um dia todo de curso, sendo que tava cansada de estudar e eu de passar calor, nada melhor que
+            brindar haha</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <video width="100%" controls>
+          <source src="27-11-23.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeos.
+        </video>
+        <div class="description">
+          <p><strong>Data:</strong> 27 de Novembro de 2023</p>
+          <br>
+          <p>E nada melhor que um espumante pra comemorar</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="11-12.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 11 de Dezembro de 2023</p>
+          <br>
+          <p>Acho que foi nesse dia que eu quase fui jogar no vasco, só lembro de tu me abanando e eu ouvindo tu falando
+            comigo looongee kkkk</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="22-12-23.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 22 de Dezembro de 2023</p>
+          <br>
+          <p>Bolinho que é 100% tua cara kkk e tu não tava afim de sair e eu "te obriguei", já tô até vendo que
+            esse ano não será diferente, mas já arquitetei tudo 😌</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2023">
+        <img src="31-12.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 31 de Dezembro de 2023</p>
+          <br>
+          <p>Só a decoração levou 80% do nosso orçamento kkk queria dizer que esse foi o melhor réveillon, porém, a
+            gente tava meio distante e então... não foi tão bom rs, tava meio sem graça, mas animou mais depois
+            que começou o joguinho do lobo e a Tailly cantando beba de caipirinha, animou a noite kkk
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <img src="casamento1.jpg.png" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 01 de Janeiro de 2024</p>
+          <br>
+          <p>
+            Eu pensei em várias formas de te pedir em casamento. Desde que comecei a criar o site do pedido, ficava
+            pensando: qual vai ser o momento certo?<br>
+
+            Queria fazer algo especial, tipo num dia lá no Recanto do Sossego, mas sabia que tu ia desconfiar do
+            notebook.
+            kkk Depois pensei no teu aniversário, mas não queria "roubar" o teu dia. Então deixei pro Réveillon, dia 1º
+            do ano — começar com o pé direito haha <br>
+
+            Mas aí coisas aconteceram e acabaram nos afastando um pouco... Mesmo assim, criei coragem. Na madrugada do
+            dia 1, te
+            pedi, e tu aceitou. Bateu aquele medinho de ouvir um não, aliás, tu selecionar o não, mas eu nem tinha
+            criado essa opção kkk <br>
+
+            Dormi tão feliz naquele dia 🤭 como não me sentia há tempos. Só fiquei pensando: tomara que
+            2024 traga nossa conexão de volta e que seja como 2021 (finalzinho), 2022 e 2023... ou até melhor. <br>
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <img src="batida.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 01 de Janeiro de 2024</p>
+          <br>
+          <p>
+            Porém, a vida já me mostrou que 2024 ia ser de provação kkk no primeio dia do ano bati no carro do vizinho
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <video width="100%" controls>
+          <source src="chocolate_quente.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeos.
+        </video>
+        <div class="description">
+          <p><strong>Data:</strong> 05 de Janeiro de 2024</p>
+          <br>
+          <p>Primeiro chocolate quente de 2024 😋🤤 </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <img src="confra24.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 06 de Janeiro de 2024</p>
+          <br>
+          <p>
+            Confra da firma que tu tomou 2L de vinho kkkk Mas que mulher linda que tu é, armaria 🥵
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <img src="OP.png" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 15 de Janeiro de 2024</p>
+          <br>
+          <p>
+            Dia que resolvemos ir viajar à Ouro Preto, foi só: Bora? BORA!!! Olhando na GOL primeiro, mas fomos de Azul
+            kkk
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <img src="pilates.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 24 de Janeiro de 2024</p>
+          <br>
+          <p>
+            A instrutora mais linda do mundo todo 😍
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <img src="carro.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 28 de Janeiro de 2024</p>
+          <br>
+          <p>
+            Tu doida pra comprar o carro e o Azulão caiu de paraquedas pra gente
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <img src="recanto.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 28 de Janeiro de 2024</p>
+          <br>
+          <p>
+            E um finalzinho de semana no recanto pra recarregar as baterias
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <img src="11-2-24.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 11 de Fevereiro de 2024</p>
+          <br>
+          <p>
+            A gente indo buscar o carro, e tu tinha trabalho na noite anterior e tava morrendo de sono pq a gente saiu
+            cedo
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <video width="100%" controls>
+          <source src="buscano_carro.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeos.
+        </video>
+        <div class="description">
+          <p><strong>Data:</strong> 11 de Fevereiro de 2024</p>
+          <br>
+          <p>Chegando em Palmas pra buscar o Azulão hehe e eu sendo suporte de bolsa pra tu kkk</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <video width="100%" controls>
+          <source src="13-2-24.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeos.
+        </video>
+        <div class="description">
+          <p><strong>Data:</strong> 13 de Fevereiro de 2024</p>
+          <br>
+          <p>Último curtinho... até agora kkk</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <img src="2-3-24.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 02 de Março de 2024</p>
+          <br>
+          <p>
+            Dia da viagem pra prova, a parte ruim foi a volta, oh chuva que a gente pegou no meio da viagem à noite kkk
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <img src="9-3-24.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 09 de Março de 2024</p>
+          <br>
+          <p>
+            Rolezin no Barraco, o melhor foi a volta pra casa, mais especificamente dentro do carro, numa rua escura
+            🫣😏
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <img src="batizado.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 30 de Março de 2024</p>
+          <br>
+          <p>
+            Batizado 🕯
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <video width="100%" controls>
+          <source src="2-4-24.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeos.
+        </video>
+        <div class="description">
+          <p><strong>Data:</strong> 02 de Abril de 2024</p>
+          <br>
+          <p>Minha motorista particular</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <video width="100%" controls>
+          <source src="17-5-24.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeos.
+        </video>
+        <div class="description">
+          <p><strong>Data:</strong> 17 de Maio de 2024</p>
+          <br>
+          <p>Inaugurando a casa nova dos feiosos no Piacá</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <img src="20-5-24.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 20 de Maio de 2024</p>
+          <br>
+          <p>
+            Minha bichinha chegou tão cansada que foi banhar e dormiu embrulhada na toalha kkk
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <video width="100%" controls>
+          <source src="itaki.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeos.
+        </video>
+        <div class="description">
+          <p><strong>Data:</strong> 21 de Maio de 2024</p>
+          <br>
+          <p>Uma criança feliz balançando no Itaki</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <video width="100%" controls>
+          <source src="6-6-24.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeos.
+        </video>
+        <div class="description">
+          <p><strong>Data:</strong> 06 de Junho de 2024</p>
+          <br>
+          <p>Eita que tinha chegado o dia que a gente mais esperou o ano todo, a viagem à Ouro Preto</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <img src="7-6-24.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 07 de Junho de 2024</p>
+          <br>
+          <p>
+            Só deixamos as coias na casa e já fomos pra rua ver a cidade e procurar comida haha cidade onde padaria abre
+            na hora do almoço
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <video width="100%" controls>
+          <source src="7-6-24..mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeos.
+        </video>
+        <div class="description">
+          <p><strong>Data:</strong> 07 de Junho de 2024</p>
+          <br>
+          <p>Só lembro de tu congelando com o drink q veio um picolé (que tu me obrigou a comer, mas depois veio de novo
+            e tu comeu kkk</p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <img src="8-6-24.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 08 de Junho de 2024</p>
+          <br>
+          <p>
+            E o arraiá no frii que a gente passou kkk mas esse vinho aí tava bom q só, deu pra esquentar bem, só achei
+            paia essas taças de plástico, mas é melhor q copo descartável kkk
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <img src="9-6-24.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 09 de Junho de 2024</p>
+          <br>
+          <p>
+            Dia que a gente foi lá no Palácio D'Ouro, que saudades daquele sorvete, me arrependi de não ter pedido um
+            pra mim kkk
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <img src="10-6-24.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 10 de Junho de 2024</p>
+          <br>
+          <p>
+            Nhoque diliça que a gente passou uns 4 dias comendo kkk lembrando que eu tinha saído pra comprar alguma
+            coisa e tu capotou de sono, e o rapaz que foi entregar tava lá na frente gritando kkkkkkk
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <img src="10-6-24.2.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 10 de Junho de 2024</p>
+          <br>
+          <p>
+            Saudades dessa janelinha e mais saudades de transar com essa vista 🥵😏🫣 (ai agora tá de noite, mas de dia
+            era massa tbm haha)
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <img src="11-6-24.jpeg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 11 de Junho de 2024</p>
+          <br>
+          <p>
+            Dia que fomos à Mariana, oh viagem doida kkk nessas cerras, lembrando daquele restaurante que a gente
+            almoçou, comida boa kkk e eu com medo da gente perder o ônibus e ter que voltar à pé
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <img src="11-6-24.2.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 11 de Junho de 2024</p>
+          <br>
+          <p>
+            E a noite foi o dia de ir no Escadabaixo, nunca comemos tanto igual nesse comidaria, quero ir de novo kkk e
+            tu comeu tanto que quase não dorme com o bucho espocando
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <img src="12-6-24.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 12 de Junho de 2024</p>
+          <br>
+          <p>
+            Dia 12 a gente fez bastante coisa, acho que foi o dia que a gente mais andou kkk começando pelo Café da
+            Escadinha, livrar o bucho pra pra ter energina pra subir e descer ladeira
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <img src="12-6-24.2.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 12 de Junho de 2024</p>
+          <br>
+          <p>
+            Depois fomos visitar as Minas de Ouro. E eu só pensava em achar uma pedrinha de ouro perdida lá kkk mas o
+            meu ouro é tu
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <img src="12-6-24.3.jpg" alt="foto">
+        <div class="description">
+          <p><strong>Data:</strong> 12 de Junho de 2024</p>
+          <br>
+          <p>
+            E finalizamos no fondue, eu já tinha visto fartura, mas igual esse fondue aqui, NUNCA kkk a porte ruim foi
+            só a cantora, que tava ruim que só a peste kkkkkkkk
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-block" data-year="2024">
+        <video width="100%" controls>
+          <source src="13-6-24.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeos.
+        </video>
+        <div class="description">
+          <p><strong>Data:</strong> 13 de Junho de 2024</p>
+          <br>
+          <p>Esse dia foi basicamente sair de manhã, andar, almoçar e voltar pra dormir, mas finalizamos a noite e o
+            penúltimo dia danto prejuízo no happy hour, que a gente chegou atrasado 😏
+            era pra gente sair às 17h, saímos quase às 19h, eita saudade de suar no frio 🥵 o ruim era que nem dava pra
+            fazer muito barulho.
+          </p>
+        </div>
+      </div>
+      
+
+      <!-- Modal para exibir imagem ampliada -->
+      <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+      </div>
+
+
+  </div>
+  </main>
+  </div>
+  <footer>
+    <p>Feito com ❤️ • by Wally </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

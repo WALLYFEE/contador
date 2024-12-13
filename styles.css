@@ -1,0 +1,293 @@
+/* Estilo geral */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #e0f7fa;
+  /* Tom suave para o fundo */
+  padding-top: 80px;
+}
+
+#fixed-header {
+  position: fixed;
+  top: 0;
+  /* Fica no topo da tela */
+  width: 100%;
+  /* Ocupa toda a largura */
+  z-index: 1000;
+  /* Sobrepõe outros elementos */
+  background-color: #1565c0;
+  /* Fundo azul escuro */
+  color: #fff;
+  /* Texto branco */
+  padding: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  /* Sombra para destaque */
+}
+
+
+/* Cabeçalho */
+header {
+  background-color: #1565c0;
+  /* Azul mais escuro */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra para destaque */
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #4cd9fc;
+  /* Vermelho suave para destaque */
+}
+
+header p {
+  margin: 5px 0 0;
+  padding: 10px;
+}
+
+/* Contador de tempo */
+#time-display {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #ffccbc;
+  /* Bege suave */
+}
+
+/* Seção de momentos */
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+.momentos h2 {
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #01579b;
+  /* Azul escuro */
+  margin-bottom: 20px;
+}
+
+/* Galeria de fotos */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Bloco de cada momento */
+.photo-block {
+  background-color: #ffffff;
+  /* Fundo branco para contraste */
+  border: 1px solid #b3e5fc;
+  /* Azul suave para borda */
+  border-radius: 10px;
+  width: 250px;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* Leve sombra */
+  text-align: left;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.photo-block:hover {
+  transform: scale(1.1);
+  /* Efeito de zoom ao passar o mouse */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.photo-block img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-block h3 {
+  font-size: 1.2rem;
+  color: #0277bd;
+  /* Azul moderado */
+  margin: 5px 0;
+}
+
+.photo-block p {
+  font-size: 1.1rem;
+  color: #455a64;
+  /* Cinza escuro */
+  margin: 5px 0;
+}
+
+.photo-block .description {
+  font-style: normal;
+  color: #607d8b;
+  /* Cinza mais claro */
+}
+
+footer {
+  background-color: #1565c0;
+  /* Azul escuro */
+  color: #fff;
+  /* Texto branco */
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  position: fixed;
+  /* Fixado ao final da página */
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+  /* Sombra sutil */
+}
+
+footer a {
+  color: #ff8a80;
+  /* Vermelho suave */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  /* Sublinha ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  header {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+
+  #time-display {
+    font-size: 1rem;
+  }
+
+  .gallery {
+    gap: 10px;
+  }
+
+  .photo-block {
+    width: 90%;
+    /* Ocupa quase toda a largura em dispositivos pequenos */
+  }
+}
+
+.year-menu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.year-menu button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #1565c0;
+  /* Azul escuro */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.year-menu button:hover {
+  background-color: #004ba0;
+  /* Azul mais escuro no hover */
+}
+
+.year-menu button.selected {
+  background-color: #004ba0;
+  /* Azul mais escuro */
+  color: #fff;
+  /* Branco */
+  font-weight: bold;
+  border: 2px solid #ffcc00;
+  /* Borda de destaque */
+}
+
+/* Estilo do modal */
+.modal {
+  display: none;
+  /* Oculto por padrão */
+  position: fixed;
+  z-index: 1000;
+  /* Sobrepõe outros elementos */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Fundo escuro com transparência */
+}
+
+/* Imagem ampliada no modal */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  /* Tamanho da imagem no modal */
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Botão de fechar (X) */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close:hover {
+  color: #ff8a80;
+  /* Cor do botão ao passar o mouse */
+}
+
+/* Cursor de zoom ao passar sobre as imagens */
+.photo-block img {
+  cursor: zoom-in;
+}
+
+/* Cursor de zoom para o modal ao clicar na imagem */
+.modal-content {
+  cursor: zoom-out;
+}
+
+#modal img {
+  cursor: zoom-out;
+
+  /* Modal: Imagem com transição suave */
+  #modal img {
+    cursor: zoom-out;
+    transform: scale(0);
+    /* Começa "escondida" */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* Transição suave */
+    opacity: 0;
+    /* Invisível inicialmente */
+  }
+
+  #modal img.show {
+    transform: scale(1);
+    /* Ampliada */
+    opacity: 1;
+    /* Visível */
+  }
+
+}
